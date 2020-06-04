@@ -20,7 +20,7 @@
                     <a href="{{route('blog.show' , $post->slug)}}" style="text-decoration: none;color: black;">
                         <h5 class="card-title" style="font-weight: 700">{{$post->title}}</h5>    
                     </a>
-                    <p class="card-text">{{Str::of($post->summary)->limit(36,'....')}}</p>
+                    <p class="card-text">{{Str::of($post->summary)->limit(33,'....')}}</p>
                     @foreach ($post->tags as $tag)
                         <a href="{{ route('blog.tag', $tag->slug) }}" class="btn btn-sm btn-dark">{{$tag->name}}</a>
                     @endforeach

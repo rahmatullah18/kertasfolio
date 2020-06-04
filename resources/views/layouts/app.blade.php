@@ -26,7 +26,7 @@
         @media (max-width:900px)
         {
             .judul{
-                font-size: 50px;
+                font-size: 30px;
             }
         }
     </style>
@@ -39,7 +39,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-        @include('layouts.footer')
+        {{-- @include('layouts.footer') --}}
     </div>
 
     @livewireScripts

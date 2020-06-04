@@ -1,7 +1,17 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-            <div style="font-family: Balsamiq Sans">kertasfolio.com</div>
+            <div style="font-family: Balsamiq Sans">
+                <a class="tw-ic" href="https://twitter.com/nndiaze" style="color: #1DA1F2; text-decoration: none">
+                    <i class="fab fa-twitter fa-sm white-text mr-lg-3 mr-3 fa-2x"> </i>
+                </a>
+                <a class="ins-ic" href="https://www.instagram.com/rahmatullah_ashar/" style="color: pink; text-decoration: none">
+                    <i class="fab fa-instagram fa-sm white-text mr-lg-3 mr-3 fa-2x"> </i>
+                </a>
+                <a class="pin-ic" href="https://github.com/rahmatullah18" style="color: black; text-decoration: none">
+                    <i class="fab fa-github fa-sm white-text fa-2x"> </i>
+                </a>
+            </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>

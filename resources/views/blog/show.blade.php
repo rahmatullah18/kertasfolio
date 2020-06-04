@@ -7,13 +7,11 @@
         <div class="col-md-12">
             <div class="card shadow-lg">
                 <div class="card-body pt-lg-5">
-                    <h1 class="text-center">{{$data['post']->title}}</h1>
-                    {{-- <hr> --}}
-                    <div id="canvas" class="lead p-lg-5 text-justify">
+                    <h1 class="judul text-center">{{$data['post']->title}}</h1>
+                    <div id="canvas" class="lead pl-lg-5 pr-lg-5 text-justify">
                         {!! $data['post']->body !!}
                     </div>
-                    <div>
-                    <h3>Tags :</h3>
+                    <div class="pr-lg-5 pl-lg-5 mt-5">
                     @if ($data['post']->tags->count() > 0)
                         <div>
                             @foreach ($data['post']->tags as $tag)
