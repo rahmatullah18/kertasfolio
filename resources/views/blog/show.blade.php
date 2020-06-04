@@ -5,11 +5,11 @@
     <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <div class="card">
-                <div class="card-body p-5">
+            <div class="card shadow-lg">
+                <div class="card-body pt-lg-5">
                     <h1 class="text-center">{{$data['post']->title}}</h1>
-                    <hr>
-                    <div id="canvas">
+                    {{-- <hr> --}}
+                    <div id="canvas" class="lead p-lg-5 text-justify">
                         {!! $data['post']->body !!}
                     </div>
                     <div>
@@ -39,4 +39,8 @@
         })
     })();
 </script>
+{{-- <script>
+    window.Canvas = @json($scripts);
+</script> --}}
+<script type="text/javascript" src="{{ mix('js/app.js', 'vendor/canvas') }}"></script>
 @endsection
