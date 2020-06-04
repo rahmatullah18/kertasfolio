@@ -36,7 +36,7 @@
             }
         }  
 
-        @media (min-width:900px )
+        @media (min-width:900px)
         {
             .card-img-top {
                 width: 100%;
