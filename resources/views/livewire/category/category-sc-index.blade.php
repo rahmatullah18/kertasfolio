@@ -12,7 +12,17 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6 text-center">
                                 <input wire:model="search" type="text" class="form-control-sm form-control" placeholder="Cari Source Code...">
-                                <div wire:loading wire:target="search" class="mt-3 lead" style="color: green;"><i class="fas fa-search"> </i>Sedang Mencari.....</div>
+                                <div wire:loading wire:target="search" class="mb-1 mt-1">
+                                    <div class="spinner-grow text-danger" role="status">
+                                      <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-warning" role="status">
+                                      <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <div class="spinner-grow text-info" role="status">
+                                      <span class="sr-only">Loading...</span>
+                                    </div>
+                                </div><br>
                             </div>
                         </div>
                         <div class="row">

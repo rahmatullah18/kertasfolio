@@ -28,7 +28,22 @@
             .judul{
                 font-size: 30px;
             }
-        }
+
+            .card-img-top {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }  
+
+        @media (min-width:900px )
+        {
+            .card-img-top {
+                width: 100%;
+                height: 15vw;
+                object-fit: cover;
+            }
+        }   
     </style>
 
     
