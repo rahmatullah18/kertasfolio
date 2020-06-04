@@ -55,7 +55,7 @@ class BlogController extends Controller
 
     public function getPostsByTopic(string $slug)
     {
-        if (\Canvas\Tag::where('slug', $slug)->first()) {
+        if (\Canvas\Topic::where('slug', $slug)->first()) {
             $data = [
                 'posts' => Post::whereHas('topic', function ($query) use ($slug) {
                     $query->where('slug', $slug);
