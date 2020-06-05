@@ -9,7 +9,7 @@
                 <div class="display-4 text-center mb-4">{{ $tag->name }}</div>
                 <div class="row mb-3">
                     @foreach ($data['posts'] as $post)
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 mb-4">
                             <div class="card">
                             <a href="{{route('blog.show' , $post->slug)}}">
                                 <img src="{{$post->featured_image}}" class="card-img-top" alt="{{$post->caption}}">
