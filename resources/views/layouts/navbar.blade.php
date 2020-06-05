@@ -27,14 +27,14 @@
             <ul class="navbar-nav ml-auto" style="font-family: Balsamiq Sans">
                 <!-- Authentication Links -->
                 @guest
-                    <li class="nav-item">
-                        <a href="{{route('blog.post')}}" class="nav-link">Artikel</a>
+                    <li class="nav-item {{ Request::is('blog*') ? 'active' : '' }}">
+                        <a href="{{route('blog.post')}}" class="nav-link font-weight-bold">Artikel</a>
                     </li>
                     
-                    <li class="nav-item">
+                    <li class="nav-item {{ Request::is('source-code*') ? 'active' : '' }}">
                         <a href="{{route('categorysc.index')}}" class="nav-link">SourceCode</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ Request::is('download-ebook-informatika*') ? 'active' : '' }}">
                         <a href="{{route('category_ebook.index')}}" class="nav-link">Ebook</a>
                     </li>
                     <li class="nav-item">

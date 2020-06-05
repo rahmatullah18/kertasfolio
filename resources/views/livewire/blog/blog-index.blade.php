@@ -51,7 +51,7 @@
             <ul class="list-group shadow-sm">
                 @foreach ($topics as $topic)
                     <li class="list-group-item p-0 pl-2 pr-2 d-flex  align-items-center">
-                        <a class="lead" href="{{ route('blog.topic', $topic->slug) }}">{{$topic->name}}</a><hr>
+                        <a class="lead" href="{{ route('blog.topic', $topic->slug) }}" style="color: #212529">{{$topic->name}}</a><hr>
                         <span class="badge badge-primary badge-pill">{{$topic->posts_count}}</span>
                     </li>
                 @endforeach
