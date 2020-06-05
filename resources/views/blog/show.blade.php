@@ -13,14 +13,17 @@
                     </div>
                     <div class="pr-lg-5 pl-lg-5 mt-5">
                     @if ($data['post']->tags->count() > 0)
-                        <div>
+                        <div><p class="lead d-inline-flex">Tag :</p>
                             @foreach ($data['post']->tags as $tag)
-                                <div class="d-inline-flex">
+                                <div class="d-inline-flex mb-2">
                                     <a href="{{ route('blog.tag', $tag->slug) }}" class="btn btn-dark btn-sm">{{ $tag->name }}</a>
                                 </div>
                             @endforeach
                         </div>
                     @endif
+                </div>
+                <div class="row justify-content-center mt-4 p-3">
+                    <script async data-uid="c7865a8c76" src="https://skilled-originator-8470.ck.page/c7865a8c76/index.js"></script>
                 </div>
                 </div>
             </div>

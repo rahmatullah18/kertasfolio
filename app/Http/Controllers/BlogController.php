@@ -47,7 +47,8 @@ class BlogController extends Controller
                 'slug' => $slug,
             ];
 
-            return view('blog.tag', compact('data'));
+            $tag = \Canvas\Tag::where('slug', $slug)->first();
+            return view('blog.tag', compact('data','tag'));
         } else {
             abort(404);
         }
@@ -63,7 +64,8 @@ class BlogController extends Controller
                 'slug' => $slug,
             ];
 
-            return view('blog.topic', compact('data'));
+            $topic = \Canvas\Topic::where('slug', $slug)->first();
+            return view('blog.topic', compact('data', 'topic'));
         } else {
             abort(404);
         }

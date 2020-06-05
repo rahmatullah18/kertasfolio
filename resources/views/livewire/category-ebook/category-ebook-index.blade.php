@@ -5,8 +5,8 @@
         <div class="row justify-content-center">
             <h1 class="display-3 judul" style="font-family: Balsamiq Sans">Ebook</h1>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="row justify-content-center">
+            {{-- <div class="col-12">
                 <div class="card border-0">
                     <div class="card-body" style="background-color: #DEEAF6;">
                         <div class="row justify-content-center">
@@ -47,7 +47,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
+            <h1 class="display-4 mt-5 text-center">Segera tiba........</h1>
+
         </div>
     </div>
 </div>

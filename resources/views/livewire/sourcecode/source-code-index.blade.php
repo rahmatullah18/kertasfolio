@@ -16,7 +16,7 @@
                                   <ul class="list-group list-group-flush">
                                     @foreach ($sourcecodes as $sc)
                                     <a href="{{route('sourcecode.show', [$category->nama_category, $sc->slug])}}" style="text-decoration: none">
-                                        <li class="page-link text-center card-efek border-0 card-animasi">
+                                        <li class="page-link text-center card-efek border-0">
                                           {{$sc->judul}}
                                         </li>
                                     </a>

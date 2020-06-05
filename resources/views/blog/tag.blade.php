@@ -6,6 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
+                <div class="display-4 text-center mb-4">{{ $tag->name }}</div>
                 <div class="row mb-3">
                     @foreach ($data['posts'] as $post)
                         <div class="col-lg-4">

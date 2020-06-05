@@ -21,6 +21,9 @@
                                 <p  wire:loading wire:target="keluar" style="color: green">Link download tersedia...</p>
                             </div>
                           </div>
+                          <div class="row justify-content-center mb-4">
+                            <script async data-uid="c7865a8c76" src="https://skilled-originator-8470.ck.page/c7865a8c76/index.js"></script>
+                          </div>
                           <div class="card-footer text-muted">
                             dibuat pada : {{$sourcecode->created_at}}
                           </div>

@@ -15,6 +15,10 @@ class BlogIndex extends Component
 
     public $data, $search;
 
+    protected $updatesQueryString = [
+        'search' => ['except' => ''],
+    ];
+
     public function render()
     {
         if ($this->search === null) {

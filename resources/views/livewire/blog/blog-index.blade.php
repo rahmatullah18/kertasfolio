@@ -46,6 +46,7 @@
             </div>
         </div>
         <div class="col-lg-3">
+            {{-- topik --}}
             <h3 class="text-center" style="font-weight: 700 ; font-family: Balsamiq Sans">Topik</h3>
             <ul class="list-group shadow-sm">
                 @foreach ($topics as $topic)
@@ -55,6 +56,8 @@
                     </li>
                 @endforeach
             </ul>
+
+            {{-- tag --}}
             <h3 class="text-center mt-3" style="font-weight: 700 ; font-family: Balsamiq Sans">Tag</h3>
             @foreach ($tags as $tag)
                 <a href="{{ route('blog.tag', $tag->slug) }}" class="btn btn-sm mb-2 btn-dark  card-efek">{{$tag->name}}</a>
