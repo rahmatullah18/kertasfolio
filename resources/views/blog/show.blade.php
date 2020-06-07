@@ -25,6 +25,9 @@
                 <div class="row justify-content-center mt-4 p-3">
                     <script async data-uid="c7865a8c76" src="https://skilled-originator-8470.ck.page/c7865a8c76/index.js"></script>
                 </div>
+                <div class="m-lg-5">
+                    @comments(['model' => $data['post']])
+                </div>
                 </div>
             </div>
         </div>
