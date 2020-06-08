@@ -25,6 +25,7 @@
             <div class="col-12 mt-2">
                 <div class="card border-0">
                     <div class="card-body" style="background-color: #DEEAF6; ">
+                        @if(sizeof($categorysc))
                         <div class="row">
                         @foreach ($categorysc as $csc)
                             <div class="col-lg-4 mb-3">
@@ -45,6 +46,13 @@
                         <div class=" mt-3 row justify-content-center">
                             {{$categorysc->links()}}
                         </div>
+                        @else
+                        <div class="row justify-content-center text-center">
+                            <div class="col-6">
+                            <div class=" alert alert-warning text-center">Source Code <b>{{ $search }}</b> Tidak ditemukan</div>
+                            </div>
+                        </div>
+                        @endif
                     </div>
                 </div>
             </div>

@@ -23,11 +23,10 @@ class BlogIndex extends Component
     {
         if ($this->search === null) {
             $posts = Post::published()->orderByDesc('published_at')->paginate(9);    
-        }else{
+        }elseif($this->search !== null){
             $posts = Post::where('title', 'like', '%' . $this->search . '%')->orderByDesc('published_at')->paginate(9);
         }
-
-        
+ 
         $topics = Topic::orderByDesc('id')->withCount('posts')->get();
         $tags = Tag::orderByDesc('id')->get();
         return view('livewire.blog.blog-index', compact('posts','topics', 'tags'));

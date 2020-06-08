@@ -19,10 +19,11 @@
     </div>
     <div class="row">
         <div class="col-lg-9">
+            @if(sizeof($posts))
             <div class="row">
             @foreach ($posts as $post)
             <div class="col-lg-4 mb-4">                
-                <div class="card shadow-lg bg-white rounded card-efek">
+                <div class="card shadow-lg bg-white ">
                     <a href="{{route('blog.show' , $post->slug)}}">
                         <div class="wrapper">
                             <img src="{{$post->featured_image}}" class="card-img-top" alt="{{$post->caption}}">
@@ -44,6 +45,13 @@
             <div class="row justify-content-center">
                 {{ $posts->links() }}
             </div>
+            @else
+                <div class="row justify-content-center text-center">
+                    <div class="col-8">
+                    <div class=" alert alert-warning text-center">Artikel <b>{{ $search }}</b> Tidak ditemukan</div>
+                    </div>
+                </div>
+            @endif
         </div>
         <div class="col-lg-3">
             {{-- topik --}}
@@ -60,7 +68,7 @@
             {{-- tag --}}
             <h3 class="text-center mt-3" style="font-weight: 700 ; font-family: Balsamiq Sans">Tag</h3>
             @foreach ($tags as $tag)
-                <a href="{{ route('blog.tag', $tag->slug) }}" class="btn btn-sm mb-2 btn-dark  card-efek">{{$tag->name}}</a>
+                <a href="{{ route('blog.tag', $tag->slug) }}" class="btn btn-sm mb-2 btn-dark">{{$tag->name}}</a>
             @endforeach
         </div>
     </div>
