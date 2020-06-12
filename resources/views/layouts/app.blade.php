@@ -54,7 +54,7 @@
         <main class="py-4">
             @yield('content')
         </main>
-        {{-- @include('layouts.footer') --}}
+        @include('layouts.footer')
     </div>
 
     @livewireScripts

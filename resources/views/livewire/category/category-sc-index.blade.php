@@ -48,8 +48,8 @@
                         </div>
                         @else
                         <div class="row justify-content-center text-center">
-                            <div class="col-6">
-                            <div class=" alert alert-warning text-center">Source Code <b>{{ $search }}</b> Tidak ditemukan</div>
+                            <div class="col-lg-6">
+                            <div class=" alert alert-danger text-center">Source Code <b>{{ $search }}</b> Tidak ditemukan</div>
                             </div>
                         </div>
                         @endif

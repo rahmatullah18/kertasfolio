@@ -23,15 +23,15 @@
             <div class="row">
             @foreach ($posts as $post)
             <div class="col-lg-4 mb-4">                
-                <div class="card shadow-lg bg-white ">
+                <div class="card bg-white border-0 rounded-lg">
                     <a href="{{route('blog.show' , $post->slug)}}">
                         <div class="wrapper">
                             <img src="{{$post->featured_image}}" class="card-img-top" alt="{{$post->caption}}">
                         </div>
                     </a>
-                  <div class="card-body">
+                  <div class="card-body" >
                     <a href="{{route('blog.show' , $post->slug)}}" style="text-decoration: none;color: black;">
-                        <h5 class="card-title" style="font-weight: 700">{{$post->title}}</h5>    
+                        <h5 class="">{{$post->title}}</h5>    
                     </a>
                     <p class="card-text">{{Str::of($post->summary)->limit(33,'....')}}</p>
                     @foreach ($post->tags as $tag)
@@ -48,7 +48,9 @@
             @else
                 <div class="row justify-content-center text-center">
                     <div class="col-8">
-                    <div class=" alert alert-warning text-center">Artikel <b>{{ $search }}</b> Tidak ditemukan</div>
+                        <div class=" alert alert-danger text-center">
+                        Artikel <b>{{ $search }}</b> Tidak ditemukan
+                    </div>
                     </div>
                 </div>
             @endif
