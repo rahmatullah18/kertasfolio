@@ -64,6 +64,13 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="row form-group mb-0">
+                            <div class="col-md-12">
+                                <a href="{{ url('/auth/facebook') }}" class="btn btn-primary">
+                                    Login with facebook
+                                </a>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>

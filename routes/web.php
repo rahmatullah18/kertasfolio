@@ -39,6 +39,8 @@ Route::get('/blog/{slug}', 'BlogController@show')->name('blog.show');
 Route::get('/tag/{slug}', 'BlogController@getPostsByTag')->name('blog.tag');
 Route::get('/topic/{slug}', 'BlogController@getPostsByTopic')->name('blog.topic');
 
-
+// social account
+Route::get('auth/{provider}', 'Auth\SocialiteController@redirectToProvider');
+Route::get('auth/{provider}/callback', 'Auth\SocialiteController@handleProviderCallback');
 
 
